@@ -26,12 +26,12 @@ const path = require("path");
     groupedFiles[ext].forEach((file) => {
       const oldPath = path.join("./files", file);
       const newPath = path.join(folderPath, file);
-      fs.renameSync(oldPath, newPath);
+      // fs.renameSync(oldPath, newPath);
     });
   }
 
-//   console.log(groupedFiles, "   extension");
-//   console.log(files, "   files");
+  //   console.log(groupedFiles, "   extension");
+  //   console.log(files, "   files");
 })();
 
 app.get("/", (req, res) => {
